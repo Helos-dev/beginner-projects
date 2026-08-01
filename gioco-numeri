@@ -1,0 +1,17 @@
+#GIOCO PY INDOVINA IL NUMERO
+#LIBRERIE RICHIESTE
+import random
+#ASSEGNAZIONI VARIABILI
+n = random.randint(1,10) #GENERA NUMERO CASUALE TRA 1 E 10
+guess = int(input("Indovina il numero tra 1 e 10: ")) #CHIEDE ALL'UTENTE DI INDOVINARE IL NUMERO
+#LOGICA DEL GIOCO
+
+while guess != n:
+    if guess < n:
+        print("TROPPO BASSO RIPROVA")
+        guess = int(input("INSERISCI UN ALTRO NUMERO: "))
+    elif guess > n:
+        print ("TROPPO ALTO RIPROVA")
+    else:
+        break
+    print("HAI INDOVINATO")
